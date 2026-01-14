@@ -1,0 +1,25 @@
+// Reset universale
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; // Fondamentale per gestire correttamente le dimensioni (width + padding)
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; // Rende i font più fluidi su Mac
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%; // Evita che le immagini escano dal loro contenitore
+}
+
+ul, ol {
+    list-style: none; // Toglie i pallini dalle liste
+}
+
+a {
+    text-decoration: none;
+    color: inherit; // Il link eredita il colore del testo circostante
+}

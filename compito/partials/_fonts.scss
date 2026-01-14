@@ -1,0 +1,20 @@
+// 1. Definiamo la famiglia font
+$font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// 2. Variabili per le misure (scala tipografica)
+$fs-sm: 0.8rem;
+$fs-normal: 1rem;
+$fs-md: 1.25rem;
+$fs-lg: 1.5rem;
+$fs-xl: 2rem;
+$fs-xxl: 3rem;
+
+// 3. Mixin per il titolo principale
+@mixin title-big {
+    font-family: $font-main;
+    font-size: $fs-xxl;
+    font-weight: 800;
+    line-height: 1.2;
+    color: $text-main; // Qui usiamo la variabile creata nello Step 2!
+    text-transform: uppercase;
+}

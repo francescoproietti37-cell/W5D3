@@ -1,0 +1,23 @@
+// Stile base per tutti i bottoni
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: filter 0.3s ease; // Per un piccolo effetto al passaggio del mouse
+
+    &:hover {
+        filter: brightness(1.1); // Schiarisce leggermente il bottone quando ci passi sopra
+    }
+}
+
+// Generazione dinamica delle varianti di colore
+// Usiamo un contatore $i per dare un nome numerico alle classi (btn-1, btn-2, btn-3)
+@for $i from 1 through length($btn-colors) {
+    .btn-#{$i} {
+        background-color: nth($btn-colors, $i);
+    }
+}

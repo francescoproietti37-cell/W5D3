@@ -1,0 +1,69 @@
+@import './partials/reset';
+
+@import './partials/colors'; // <--- Aggiungi questa riga
+
+
+@import './partials/font'; // <--- Aggiungi questo
+@import './partials/spacings';
+@import './partials/reset';
+@import './partials/colors';
+@import './partials/font';
+@import './partials/mixins'; // <--- Inseriscilo qui
+@import './partials/spacings';
+@import './partials/buttons'; // <--- Aggiungi questo
+
+
+// 1. Stili generali per il corpo pagina
+body {
+    background-color: #f8f9fa;
+    font-family: $font-main; // Variabile definita in _font.scss
+}
+
+// 2. Header e Navigazione
+header {
+    background-color: $bg-hero; // Variabile da _colors.scss
+    color: $text-main;
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        ul {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+// 3. Hero Section (Sviluppo e Web Design)
+.hero {
+    background-color: $bg-hero; // Colore viola richiesto
+    color: $text-main;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+
+    h2 {
+        @include title-big; // Mixin creato nello Step 3
+    }
+
+    .hero-img {
+        // Mixin floating con bordo chiaro per la hero
+        @include floating(20px, 0 15px 35px rgba(0,0,0,0.4), rgba(255,255,255,0.3));
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+// 4. Griglia Immagini (Main)
+.image-grid {
+    // Mixin grid per 4 elementi per riga
+    @include grid(4, 20px); 
+
+    img {
+        // Mixin floating SENZA bordo per la griglia
+        @include floating(15px, 0 5px 15px rgba(0,0,0,0.1));
+    }
+}

@@ -1,0 +1,116 @@
+body,
+h1 {
+  margin: 0;
+}
+
+nav {
+  display: block;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.primary {
+  background-color: purple;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+}
+.primary:hover {
+  background-color: white;
+  color: purple;
+}
+
+p.pacchiano {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: black;
+  border-radius: 20px;
+}
+
+p.colored {
+  color: green;
+  border: 3px dotted red;
+}
+
+p.another {
+  background-color: green;
+}
+
+#img-container {
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  border: 3px dotted red;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-border {
+  border: 3px dotted red;
+  border-radius: 30px;
+}
+
+.small-border {
+  border: 3px dotted red;
+  border-radius: 10px;
+}
+
+.unknown-border {
+  border: 3px dotted red;
+  border-radius: 20px;
+}
+
+.test {
+  font-size: 16px;
+}
+
+.text-12px {
+  font-size: 12px;
+}
+
+.text-16px {
+  font-size: 16px;
+}
+
+.text-20px {
+  font-size: 20px;
+}
+
+.text-24px {
+  font-size: 24px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.text-md {
+  font-size: 16px;
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.text-xxl {
+  font-size: 24px;
+}/*# sourceMappingURL=spiegazione.css.map */

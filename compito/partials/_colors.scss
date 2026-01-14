@@ -1,0 +1,11 @@
+// Colori Testo e Sfondo
+$text-main: #f4f4f4;
+$bg-hero: #640fc5;
+
+// Lista colori per i bottoni (utile per il ciclo che faremo dopo)
+$btn-colors: (#0e6cff, #ff8700, #4caf50);
+
+// Variabili singole per i bottoni (se servono per usi specifici)
+$color-blue: nth($btn-colors, 1);
+$color-orange: nth($btn-colors, 2);
+$color-green: nth($btn-colors, 3);
