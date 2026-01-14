@@ -1,29 +1,4 @@
-//risultaato cicli
-// padding-block-sm
-// padding-block-normal
-// padding-block-md
-// padding-block-lg
-// padding-block-xl
-// padding-block-xxl
-// padding-inline-sm
-// padding-inline-normal
-// padding-inline-md
-// padding-inline-lg
-// padding-inline-xl
-// padding-inline-xxl
-// margin-block-sm
-// margin-block-normal
-// margin-block-md
-// margin-block-lg
-// margin-block-xl
-// margin-block-xxl
-// margin-inline-sm
-// margin-inline-normal
-// margin-inline-md
-// margin-inline-lg
-// margin-inline-xl
-// margin-inline-xxl
-// 1. Definiamo la mappa delle misure
+
 $spacings: (
     "sm": 0.5rem,
     "normal": 1rem,
@@ -33,13 +8,13 @@ $spacings: (
     "xxl": 5rem
 );
 
-// 2. Ciclo per generare le classi
+
 @each $name, $value in $spacings {
-    // Genera classi per Padding
+ 
     .padding-block-#{$name} { padding-block: $value; }
     .padding-inline-#{$name} { padding-inline: $value; }
 
-    // Genera classi per Margin
+
     .margin-block-#{$name} { margin-block: $value; }
     .margin-inline-#{$name} { margin-inline: $value; }
 }
